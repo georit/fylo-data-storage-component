@@ -9,7 +9,19 @@
   --dark-blue: hsl(228, 56%, 26%);
   --very-dark-blue: hsl(229, 57%, 11%);
   /* ***fonts*** */
-  --font: "Raleway", sans-serif;
+  --raleway-font: "Raleway", sans-serif;
 }
 
 /* *****general styles***** */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  color: var(--pale-blue);
+  font-family: var(--raleway-font);
+  font-size: 14px;
+}
