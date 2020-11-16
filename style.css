@@ -153,3 +153,61 @@ span.gb-num {
 span.gb-left-text {
   color: var(--grayish-blue);
 }
+
+/*segment *****media queries***** */
+@media screen and (min-width: 935px) {
+  /*segment *****container***** */
+  .container {
+    background: url("./images/bg-desktop.png") bottom no-repeat,
+      var(--very-dark-blue);
+    flex-flow: row nowrap;
+    padding: 0 20%;
+  }
+
+  /*segment *****header***** */
+  .header,
+  .usage {
+    margin-bottom: 0;
+  }
+
+  .header {
+    padding: 2rem;
+    width: 55%;
+    margin-right: 1.5rem;
+  }
+
+  /*segment *****detailed usage***** */
+  .usage {
+    padding: 2rem;
+  }
+
+  p.usage-info {
+    text-align: left;
+  }
+
+  .scale {
+    padding: 0.8rem 0 0;
+  }
+
+  .gb-left {
+    position: absolute;
+    left: unset;
+    transform: translateX(0%);
+    right: 2rem;
+    top: -2.5rem;
+    border-bottom-right-radius: 0;
+  }
+
+  .gb-left::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 100%;
+    border-right: 15px solid #fff;
+    border-bottom: 25px solid transparent;
+  }
+
+  span.gb-num {
+    font-size: 2.5rem;
+  }
+}
